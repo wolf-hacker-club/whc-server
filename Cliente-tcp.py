@@ -7,10 +7,7 @@
 
 # Principais módulos 
 
-import socket 
-import sys 
-import os
-import thread
+import socket  
 
 target_host = "0.0.0.0"
 
@@ -31,3 +28,5 @@ client.send ( "GET / HTTP / 1.1 \ r \ nHost: 0.0.0.0 r \ n \ r \ n \ ")
 # Receber dados
 
 resposta = client.recv ( 4096 )
+
+print resposta
