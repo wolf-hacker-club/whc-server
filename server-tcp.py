@@ -4,8 +4,6 @@
 
 # Importando as bibliotecas
 
-import sys 
-import os
 import socket
 import thread
 
@@ -34,9 +32,9 @@ def handle_client (client_socket):
 
 # Envia um pacote de volta
 
-#client_socket.send ( " ACK !")
+client_socket.send ( " ACK !")
 
-#client_socket.close ()
+client_socket.close ()
 
 
 while True:
